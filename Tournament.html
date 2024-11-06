@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments</title>
+    <link rel="stylesheet" href="tornamentstyling.css"> <!-- Link to your CSS -->
+    <script src="tournament.js" defer></script> <!-- Link to your JavaScript -->
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+ <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Locations.html">Our Locations</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="tournament.html">Tournaments</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header>
+        <h1>Tournaments</h1>
+        <p>Sign up for our upcoming tournaments and check out our winners!</p>
+    </header>
+
+    <!-- Tournament Container -->
+    <div class="tournament-container">
+        <!-- Signup Form -->
+        <div class="form-div">
+            <h2>Sign Up for Tournament</h2>
+            <form id="signup-form">
+                <input type="text" id="name" placeholder="Name" required><br><br>
+                <input type="text" id="surname" placeholder="Surname" required><br><br>
+                <input type="text" id="phone" placeholder="Phone Number" required><br><br>
+                <select id="location" required><br><br>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Philippi">Philippi</option>
+                    <option value="Philippi Village">Philippi Village</option>
+                    <option value="Khayelitsha">Khayelitsha</option>
+                </select><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Winners List -->
+        <div class="winners-div">
+            <h2>Tournament Winners</h2>
+            <select id="winner-month">
+                <option value="" disabled selected>Select Month</option>
+                <option value="January">January 2024</option>
+                <option value="March">March 2024</option>
+                <option value="June">June 2024</option>
+                <option value="September">September 2024</option>
+                <option value="November">November 2024</option>
+            </select>
+            <div id="winner-info" style="margin-top: 10px; display: none;">
+                <p id="winner-name"></p>
+                <img id="winner-pic" src="" alt="" style="width: 100%; border-radius: 8px; display: none;">
+            </div>
+        </div>
+
+        <!-- Signup Table -->
+        <div class="signup-table-div">
+            <h2>Signed Up Players</h2>
+            <table id="signup-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Phone</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kasi Game Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

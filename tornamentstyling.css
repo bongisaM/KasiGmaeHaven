@@ -1,0 +1,100 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navigation menu styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(68, 68, 68, 0.9);
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c154c1;
+}
+
+/* Header styling */
+header {
+    background-color: #444;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #c154c1;
+}
+
+/* Div for layout */
+.tournament-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Div styling */
+.form-div, .winners-div, .signup-table-div {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: #444;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #c154c1;
+    margin-top: auto;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #c154c1;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    background-color: #c154c1;
+    color: #fff;
+}

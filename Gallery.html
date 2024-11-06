@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navigation menu styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.9);
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #c154c1;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #444;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #c154c1;
+        }
+
+        /* Container for gallery images */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Individual image card styling */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style images to fit in grid */
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for images */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #444;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: #c154c1;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+  <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Locations.html">Our Locations</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="tournament.html">Tournaments</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gallery</h1>
+        <p>See our customers enjoying at Kasi Game Haven!</p>
+    </header>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <!-- Display images in the gallery -->
+        <div class="gallery-item">
+            <img src="Gallery/pic1.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic2.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic3.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic4.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic5.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic6.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic7.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic8.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic9.jpg" alt="Customer enjoying in our game shop">
+        </div>
+        <div class="gallery-item">
+            <img src="Gallery/pic10.jpg" alt="Customer enjoying in our game shop">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kasi Game Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
